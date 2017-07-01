@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Tf1-adblock-fix",
+  "description": "Tf1-adblock-fix",
+  "version": "1.0",
+
+  "permissions": [
+    "activeTab",
+    "https://www.tf1.fr/"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://www.tf1.fr/*"],
+      "js": ["jquery.js", "script.js"]
+    }
+  ]
+}
